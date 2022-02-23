@@ -15,9 +15,9 @@
                 },
                 {
                     "name": "Movement",
-                    "type": "Button",
+                    "type": "Value",
                     "id": "0da96c49-3f03-4f6b-ba96-af1530cc0e82",
-                    "expectedControlType": "Button",
+                    "expectedControlType": "Vector2",
                     "processors": "",
                     "interactions": ""
                 },
@@ -43,26 +43,37 @@
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "63fb6c41-5e87-41a3-9128-07872a8ef507",
-                    "path": "<Keyboard>/d",
-                    "interactions": "Hold",
+                    "name": "2D Vector",
+                    "id": "496f9605-b753-4004-aa54-ec277fa2de6f",
+                    "path": "2DVector",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Movement",
-                    "isComposite": false,
+                    "isComposite": true,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "",
-                    "id": "c33d6f62-ca5d-417a-87a1-f2b2f41a3832",
+                    "name": "left",
+                    "id": "c289ee6a-746e-43f9-8bfe-78850fdc104f",
                     "path": "<Keyboard>/a",
-                    "interactions": "Hold",
+                    "interactions": "",
                     "processors": "",
                     "groups": "",
                     "action": "Movement",
                     "isComposite": false,
-                    "isPartOfComposite": false
+                    "isPartOfComposite": true
+                },
+                {
+                    "name": "right",
+                    "id": "30166733-fb85-4c92-988b-85c44dd5c9f4",
+                    "path": "<Keyboard>/d",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Movement",
+                    "isComposite": false,
+                    "isPartOfComposite": true
                 },
                 {
                     "name": "",

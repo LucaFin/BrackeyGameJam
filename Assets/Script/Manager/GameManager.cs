@@ -1,15 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     [SerializeField]
     private GameObject SpriteMask;
-    // Start is called before the first frame update
+
+    public bool isPaused { get; internal set; }
+
     void Start()
-    {
+    { 
+        isPaused = false;
         instance = this;
     }
 
@@ -21,5 +25,10 @@ public class GameManager : MonoBehaviour
     public bool GetActivateMask()
     {
         return SpriteMask.activeInHierarchy;
+    }
+
+    public void Death()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }
