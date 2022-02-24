@@ -7,8 +7,9 @@ public class LerpMovement : MonoBehaviour
     public Vector2 StartPosition;
     public Vector2 LastPosition;
     private float time=0;
-    private float degrees=0;
     private Vector2 offset;
+    [SerializeField]
+    private float speed = 0.25f;
     // Update is called once per frame
     private void Awake()
     {
@@ -18,9 +19,8 @@ public class LerpMovement : MonoBehaviour
     {
         if (!GameManager.instance.isPaused)
         {
-            degrees--;
-            transform.eulerAngles = Vector3.forward * degrees;
-            time += Time.deltaTime * 0.25f;
+            
+            time += Time.deltaTime * speed;
             if (time < 1)
             {
                 transform.position = Vector3.Lerp(StartPosition + offset, LastPosition + offset, time);

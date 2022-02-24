@@ -2805,6 +2805,7 @@ GameObject:
   - component: {fileID: 1255027273}
   - component: {fileID: 1255027272}
   - component: {fileID: 1255027276}
+  - component: {fileID: 1255027277}
   m_Layer: 0
   m_Name: Trap
   m_TagString: Untagged
@@ -2919,6 +2920,18 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.19
+--- !u!114 &1255027277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1255027271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a50bd2da86b4849a3ea415a5041017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1321645267
 GameObject:
   m_ObjectHideFlags: 0
@@ -2932,6 +2945,7 @@ GameObject:
   - component: {fileID: 1321645271}
   - component: {fileID: 1321645270}
   - component: {fileID: 1321645269}
+  - component: {fileID: 1321645273}
   m_Layer: 0
   m_Name: Trap (1)
   m_TagString: Untagged
@@ -3046,6 +3060,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 1
   m_SpriteSortPoint: 0
+--- !u!114 &1321645273
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1321645267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94a50bd2da86b4849a3ea415a5041017, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1328180727
 GameObject:
   m_ObjectHideFlags: 0

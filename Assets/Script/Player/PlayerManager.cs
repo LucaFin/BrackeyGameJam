@@ -28,7 +28,7 @@ public class PlayerManager : MonoBehaviour
     {
         if (callbackContext.performed)
         {
-            rb.velocity = callbackContext.ReadValue<Vector2>()*playerStats.Speed;
+            rb.velocity = new Vector2(callbackContext.ReadValue<Vector2>().x * playerStats.Speed, rb.velocity.y);
         }
         if (callbackContext.canceled)
         {
