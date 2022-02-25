@@ -1058,6 +1058,7 @@ GameObject:
   - component: {fileID: 453090381}
   - component: {fileID: 453090383}
   - component: {fileID: 453090382}
+  - component: {fileID: 453090384}
   m_Layer: 0
   m_Name: Idle
   m_TagString: Untagged
@@ -1171,6 +1172,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.34071505, y: 0.33190525}
   m_EdgeRadius: 0
+--- !u!114 &453090384
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 453090379}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9468b9e8268f8034e95199acf4d88b4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &470054983
 GameObject:
   m_ObjectHideFlags: 0
