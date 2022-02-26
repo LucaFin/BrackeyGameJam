@@ -11,6 +11,11 @@ public class GameManager : MonoBehaviour
 
     public bool isPaused { get; internal set; }
 
+    public void StartGame()
+    {
+        SceneManager.LoadScene("Level0");
+    }
+
     void Start()
     { 
         SpriteMask.SetActive(false);

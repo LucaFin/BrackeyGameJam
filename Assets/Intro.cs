@@ -11,7 +11,7 @@ public class Intro : MonoBehaviour
     public Vector2 LastPosition;
     private float time = 0;
     private Vector2 offset;
-    private float speed = 0.25f;
+    private float speed = 0.5f;
     private float goBack =0;
     private bool casted=false;
 
@@ -49,6 +49,7 @@ public class Intro : MonoBehaviour
             else
             {
                 GameManager.instance.isPaused = false;
+                GameManager.instance.SetActivateMask(false);
                 Destroy(this.gameObject);
             }
         }
