@@ -10,7 +10,7 @@ public class ConstantRotation : MonoBehaviour
         if (!GameManager.instance.isPaused)
         {
             degrees--;
-            transform.eulerAngles = Vector3.forward * degrees;
+            transform.eulerAngles = Vector3.forward * degrees * Time.deltaTime * 1000;
         }
     }
 }

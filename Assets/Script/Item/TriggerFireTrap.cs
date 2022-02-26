@@ -32,6 +32,7 @@ public class TriggerFireTrap : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             animator.enabled = false;
             GameManager.instance.isPaused= true;
             Invoke(nameof(Death), 0.5f);
