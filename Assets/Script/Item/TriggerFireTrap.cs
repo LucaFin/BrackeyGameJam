@@ -45,7 +45,6 @@ public class TriggerFireTrap : MonoBehaviour
     }
     private void SetReadyToFire()
     {
-        Debug.Log("ready");
         ready = true;
     }
 }
