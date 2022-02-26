@@ -55,4 +55,9 @@ public class PlayerManager : MonoBehaviour
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
         }
     }
+
+    public void Restart()
+    {
+        GameManager.instance.Death();
+    }
 }
