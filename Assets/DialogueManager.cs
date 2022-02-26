@@ -9,6 +9,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text NameText;
     public TMP_Text DialogueText;
     public Queue<string> sentences = new Queue<string>();
+    private string LastSentence ="";
     // Start is called before the first frame update
     internal void StartDialogue(Dialogue dialogue)
     {
@@ -24,13 +25,16 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if(sentences.Count == 0)
+        if (LastSentence.Equals(DialogueText.text))
         {
-            EndDialogue();
-            return;
+            if (sentences.Count == 0)
+            {
+                EndDialogue();
+                return;
+            }
+            LastSentence = sentences.Dequeue();
+            StartCoroutine(TypeSentences(LastSentence));
         }
-        string sentence = sentences.Dequeue();
-        StartCoroutine(TypeSentences(sentence));
     }
 
     private IEnumerator TypeSentences(string sentence)

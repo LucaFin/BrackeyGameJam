@@ -4079,10 +4079,11 @@ MonoBehaviour:
   dialogue:
     name: CRAZy MAGE
     sentences:
-    - Ciao, sono il mago stronzo
-    - ora faccio una magia cattiva
+    - Ciao, sono il mago cattivo
+    - "ora faccio collidere il mio mondo immaginario con la tua realt\xE0"
     - finisci il gioco per battermi
-    - tanto non sa che deve premere spazio per usare il suo terzo occhio
+    - Se vuoi guardare il mio bellissimo mondo dovrai premere Space, per arrenderti
+      premi R
 --- !u!1 &1979551978
 GameObject:
   m_ObjectHideFlags: 0
@@ -5790,7 +5791,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ' ad'
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
