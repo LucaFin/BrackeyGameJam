@@ -38,7 +38,10 @@ public class PlayerManager : MonoBehaviour
 
     public void RealWorld(InputAction.CallbackContext callbackContext)
     {
-        GameManager.instance.SetActivateMask(callbackContext.performed);
+        if (!GameManager.instance.isPaused)
+        {
+            GameManager.instance.SetActivateMask(callbackContext.performed);
+        }
     }
 
     private void Update()
@@ -53,6 +56,11 @@ public class PlayerManager : MonoBehaviour
         else
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation;
+        }
+
+        if (GameManager.instance.isPaused)
+        {
+            rb.constraints = RigidbodyConstraints2D.FreezeAll;
         }
     }
 
