@@ -10,9 +10,11 @@ public class PlayerManager : MonoBehaviour
     private PlayerStats playerStats;
     private Rigidbody2D rb;
     private bool IsGrounded=true;
+    private float ScaleOffset = 0;
     private void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player");
+        ScaleOffset = player.transform.localScale.x / 5;
         rb = player.GetComponent<Rigidbody2D>();
     }
 
@@ -46,9 +48,9 @@ public class PlayerManager : MonoBehaviour
 
     private void Update()
     {
-        IsGrounded = Physics2D.RaycastAll(player.transform.position, Vector2.down, 0.66f).Length > 1 ||
-            Physics2D.RaycastAll(player.transform.position+Vector3.left*0.5f, Vector2.down, 0.66f).Length>1 ||
-            Physics2D.RaycastAll(player.transform.position+Vector3.right*0.5f, Vector2.down, 0.66f).Length>1;
+        IsGrounded = Physics2D.RaycastAll(player.transform.position, Vector2.down, 0.66f*ScaleOffset).Length > 1 ||
+            Physics2D.RaycastAll(player.transform.position+Vector3.left*0.5f, Vector2.down, 0.66f * ScaleOffset).Length>1 ||
+            Physics2D.RaycastAll(player.transform.position+Vector3.right*0.5f, Vector2.down, 0.66f * ScaleOffset).Length>1;
         if (GameManager.instance.GetActivateMask())
         {
             rb.constraints = RigidbodyConstraints2D.FreezeRotation | RigidbodyConstraints2D.FreezePositionX;

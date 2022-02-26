@@ -49,6 +49,7 @@ public class Intro : MonoBehaviour
             else
             {
                 GameManager.instance.isPaused = false;
+                Destroy(this.gameObject);
             }
         }
         else if(!casted)
