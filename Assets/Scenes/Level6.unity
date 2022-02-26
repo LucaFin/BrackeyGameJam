@@ -1157,30 +1157,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 9221456558211014800, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 245477090}
-    - target: {fileID: 9221456558211014800, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 245477090}
-    - target: {fileID: 9221456558211014800, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 245477090}
-    - target: {fileID: 9221456558211014800, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
-      propertyPath: m_ActionEvents.Array.data[0].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Jump
-      objectReference: {fileID: 0}
-    - target: {fileID: 9221456558211014800, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
-      propertyPath: m_ActionEvents.Array.data[1].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Movement
-      objectReference: {fileID: 0}
-    - target: {fileID: 9221456558211014800, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
-      propertyPath: m_ActionEvents.Array.data[2].m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: RealWorld
-      objectReference: {fileID: 0}
     - target: {fileID: 9221456558211014801, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
       propertyPath: m_RootOrder
       value: 9

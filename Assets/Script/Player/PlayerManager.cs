@@ -56,8 +56,11 @@ public class PlayerManager : MonoBehaviour
         }
     }
 
-    public void Restart()
+    public void Restart(InputAction.CallbackContext callbackContext)
     {
-        GameManager.instance.Death();
+        if (callbackContext.started)
+        {
+            GameManager.instance.Death();
+        }
     }
 }

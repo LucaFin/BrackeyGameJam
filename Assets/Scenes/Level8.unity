@@ -767,50 +767,17 @@ TilemapCollider2D:
   m_Offset: {x: 0, y: 0}
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0.00001
---- !u!1 &245477089
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 245477091}
-  - component: {fileID: 245477090}
-  m_Layer: 0
-  m_Name: PlayerManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &245477090
+--- !u!114 &245477090 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 7702832911326307182, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
+  m_PrefabInstance: {fileID: 900474215}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245477089}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 11f2bef9c0b7de34693b39e2713482d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 11400000, guid: a4e8ba6718591ba4eaeaf954726942ea, type: 2}
---- !u!4 &245477091
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 245477089}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.9976896, y: -0.076720044, z: -0.20368253}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &387544914
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1097,7 +1064,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9221456558211014801, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 9221456558211014801, guid: ed12a7cd0d7685643abac938a200ccdf, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4406,7 +4373,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6936099039377552180, guid: 3b603b80bcd4bf748989912ddae45955, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6936099039377552180, guid: 3b603b80bcd4bf748989912ddae45955, type: 3}
       propertyPath: m_LocalScale.x
