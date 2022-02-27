@@ -7,6 +7,8 @@ public class Intro : MonoBehaviour
 {
     [SerializeField]
     private GameObject DialogueBoxUI;
+    [SerializeField]
+    private DialogueTrigger dialogueTrigger;
     public Vector2 StartPosition;
     public Vector2 LastPosition;
     private float time = 0;
@@ -20,6 +22,7 @@ public class Intro : MonoBehaviour
     {
         GameManager.instance.isPaused = true;
         offset = transform.position - (Vector3)StartPosition;
+        dialogueTrigger.TriggerDialogue();
     }
 
     // Update is called once per frame

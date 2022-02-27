@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class DialogueTrigger : MonoBehaviour
 {
+    [SerializeField]
+    private DialogueManager dialogueManager;
     public Dialogue dialogue;
     // Start is called before the first frame update
-    private void Start()
-    {
-        TriggerDialogue();
-    }
     public void TriggerDialogue()
     {
-        FindObjectOfType<DialogueManager>().StartDialogue(dialogue);
+        dialogueManager.StartDialogue(dialogue);
     }
 }

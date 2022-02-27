@@ -15,12 +15,14 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("Level0");
     }
-
+    private void Awake()
+    {
+        instance = this;
+    }
     void Start()
     { 
         SpriteMask.SetActive(false);
         isPaused = false;
-        instance = this;
     }
 
     public void SetActivateMask(bool EnableMask)

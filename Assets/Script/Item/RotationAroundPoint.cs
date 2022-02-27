@@ -12,6 +12,7 @@ public class RotationAroundPoint : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(!GameManager.instance.isPaused)
         transform.RotateAround(targetPosition.transform.position,Vector3.forward,Time.deltaTime * speed);
     }
 }

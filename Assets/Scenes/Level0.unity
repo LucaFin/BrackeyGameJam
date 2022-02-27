@@ -297,6 +297,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueBoxUI: {fileID: 417378956}
+  dialogueTrigger: {fileID: 1866484424}
   StartPosition: {x: 10, y: -3.09}
   LastPosition: {x: 4.88, y: -3.09}
 --- !u!1 &220280218
@@ -2328,7 +2329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.701, y: -63.8}
+  m_AnchoredPosition: {x: 0.701, y: 134}
   m_SizeDelta: {x: 397.23, y: 97.629}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &417378958
@@ -4015,14 +4016,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 843c17fa00fde1f4396f7a596671c098, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialogueManager: {fileID: 816688419}
   dialogue:
-    name: CRAZy MAGE
+    name: CRAZY MAGE
     sentences:
-    - Ciao, sono il mago cattivo
-    - "ora faccio collidere il mio mondo immaginario con la tua realt\xE0"
-    - finisci il gioco per battermi
-    - Se vuoi guardare il mio bellissimo mondo dovrai premere Space, per arrenderti
-      premi R
+    - Hi, I'm a evil wizard looking for a worthy opponent and I want to test you
+      ...
+    - I decided to make my imaginary world collide with your reality ...
+    - if you want to save this world you will have to cross mine to reach me and
+      beat me ...
+    - Will you be able to move between reality and fiction to save the world?
 --- !u!1 &1979551978
 GameObject:
   m_ObjectHideFlags: 0
