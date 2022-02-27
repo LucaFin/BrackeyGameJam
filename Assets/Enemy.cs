@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Enemy : MonoBehaviour
 {
@@ -18,11 +19,15 @@ public class Enemy : MonoBehaviour
     private GameObject dialogueBoxIntro;
     [SerializeField]
     private GameObject dialogueBoxEnd;
+    [SerializeField]
+    private Image image;
+    private int maxLife;
 
-    public bool EndGame = false;
+    private bool EndGame = false;
 
     private void Start()
     {
+        maxLife = Life;
         dialogueBoxIntro.SetActive(true);
         dialogueTriggerIntro.TriggerDialogue();
         StartCoroutine("StartingStop");
@@ -39,6 +44,7 @@ public class Enemy : MonoBehaviour
 
         if (collision.gameObject.CompareTag("Player"))
         {
+            image.fillAmount -= 0.2f;
             if (Life == 1)
             {
                 Death();
