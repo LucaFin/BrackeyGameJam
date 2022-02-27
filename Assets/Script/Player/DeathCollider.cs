@@ -11,6 +11,7 @@ public class DeathCollider : MonoBehaviour
             GameManager.instance.isPaused = true;
             collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
             GameManager.instance.SetActivateMask(true);
+            AudioManager.instance.DeathClip();
             Invoke(nameof(Death), 0.5f);
         }
     }

@@ -20,8 +20,9 @@ public class PlayerManager : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext callbackContext)
     {
-        if (callbackContext.performed && IsGrounded && !GameManager.instance.GetActivateMask())
+        if (callbackContext.performed && IsGrounded && !GameManager.instance.GetActivateMask() && !GameManager.instance.isPaused)
         {
+            AudioManager.instance.JumpClip();
             rb.AddForce(Vector2.up * playerStats.JumpForce, ForceMode2D.Impulse);
         }
     }

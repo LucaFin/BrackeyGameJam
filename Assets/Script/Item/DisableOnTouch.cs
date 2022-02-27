@@ -8,6 +8,7 @@ public class DisableOnTouch : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            AudioManager.instance.CollectClip();
             this.gameObject.SetActive(false);
         }
     }
